@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, poppins;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ToDoApp{
+    width: 30vw;
+    height: 90vh;
+    margin: 2px purple;
+    background-color: white;
+    border-radius: 12px;
+    margin: 2%;
+    padding: 2%;
+}
+
+.ToDoApp img{
+    width: 8%;
+}
+.ToDoApp h2{
+    font-size: 2rem;
+    color: #153677;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin: 25px 6px;
+    border-radius: 10px;
+}
+.row input{
+    border-radius: 20px;
+    width: 80%;
+    height: 10%;
+    background: rgba(148,163,184,.5);
+    color: rgb(94, 93, 93);
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 10px;
+}
+.row button{
+    border-radius: 40px;
+    width: 22%;
+    background-color: rgb(228, 65, 6);
+    color: rgb(255, 255, 255);
+    height: 10%;
+    padding: 2%;
+    margin: 14px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    position: relative;
+    
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    background-image: url(images/radio.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #4e085f;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    color: #555;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: rgb(180, 176, 176);
+}
